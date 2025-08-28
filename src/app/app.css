@@ -5,10 +5,12 @@
 }
 
 .img-Chainsawman {
-  height: 800px;
-  width: 600px;
+  height: 50rem;
+  width: 37.5rem;
   margin-left: -10em;
-  text-shadow: 0 0 10px red;
+  text-shadow: 0 0 0.625rem red;
+  position: relative;
+  z-index: 1;
   
 }
 
@@ -26,13 +28,13 @@
   font-family: "Jolly Lodger", system-ui;
   font-weight: 4000;
   font-style: normal;
-  font-size: 100px;
+  font-size: 6.25rem;
   color: rgb(183, 100, 37);
     color: #fff;
   text-shadow:
     0px 0 50px rgb(243, 32, 32);
     margin-bottom: 0px;
-    margin-left: -80px;
+    margin-left: -5rem;
     text-align: center;
     align-items: center;
 }
@@ -44,21 +46,31 @@
 }
 
 .imagemEmJapones{
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .container-principal{
     margin-top: -200em;
+    position: relative;
+    z-index: 2;
 }
 
 .animate-fadein {
   animation: fadeIn 2s forwards;
+}
+.animate-fadeout {
+  animation: fadeOut 2s forwards;
 }
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(40px); }
+}
+
 
 .container2{
   margin-top: 15em;
