@@ -1,0 +1,52 @@
+.tituloPrincipal{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: -1.5em;
+}
+h1{
+      font-family: "Jolly Lodger", system-ui;
+  font-weight: 4000;
+
+  text-shadow: 0 0 30px red;
+  color: white;
+}
+
+span{
+  color: rgb(255, 0, 0);
+}
+
+.img{
+  height: 800px;
+  margin-left: -10em;
+}
+
+.container2{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  margin: 20em 10em 0 10em;
+}
+
+.textoPrincipalDasImagens{
+  font-size: 70px;
+  text-align: center;
+  margin: 0
+}
+
+.painel{
+  border: solid 10px brown;
+  height: 20em;
+  border-radius: 10px;
+}
+
+.animate-fadein {
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.painelDeImagens{
+  margin-top: 5em;
+}

@@ -1,0 +1,36 @@
+<div
+  pAnimateOnScroll
+  enterClass="animate-fadein"
+  leaveClass="animate-fadeout"
+  class="flex justify-center items-center h-40 w-40 rounded-2xl"
+>
+  <section class="tituloPrincipal">
+    <h1>Ação, porradaria e <br><span>sangue</span>,<br> como você ja sabe...</h1>
+  </section>
+</div>
+
+<div
+  pAnimateOnScroll
+  enterClass="animate-fadein"
+  leaveClass="animate-fadeout"
+  class="flex justify-center items-center h-40 w-40 rounded-2xl"
+>
+  <section class="container2">
+    <div><img class="img" src="/makima.png" alt="" /></div>
+    <div class="painelDeImagens">
+      <h1 class="textoPrincipalDasImagens">Imagens da primeira temporada</h1>
+
+      <p-galleria
+        [value]="images"
+        [showIndicators]="true"
+        [changeItemOnIndicatorHover]="true"
+        [showThumbnails]="false"
+        [containerStyle]="{ 'max-width': '640px' }"
+      >
+        <ng-template #item let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+      </p-galleria>
+    </div>
+  </section>
+</div>

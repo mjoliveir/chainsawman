@@ -1,0 +1,40 @@
+.container-principal{
+    background-color: #564813;
+    border: solid rgb(128, 78, 38);
+    border-radius: 10px;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: azure;
+    padding: 30px;
+}
+
+.textoApresentação{
+    margin-bottom: 30px;
+}
+
+.texto{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.inputDeEmail{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+h1{
+      font-family: "Jolly Lodger", system-ui;
+      font-size: 60px;
+      text-shadow: 0 0 5px rgb(0, 0, 0);
+      margin:0em;
+}
