@@ -1,13 +1,12 @@
 .tituloPrincipal{
     text-align: center;
-    font-size: 80px;
+    font-size: 5rem;
     margin-bottom: -1.5em;
 }
 h1{
-      font-family: "Jolly Lodger", system-ui;
-  font-weight: 4000;
+  font-family: "Jolly Lodger", system-ui;
 
-  text-shadow: 0 0 30px red;
+  text-shadow: 0 0 1.875rem red;
   color: white;
 }
 
@@ -16,8 +15,9 @@ span{
 }
 
 .img{
-  height: 800px;
+  height: 50rem;
   margin-left: -10em;
+  width: 200%;
 }
 
 .container2{
@@ -27,7 +27,7 @@ span{
 }
 
 .textoPrincipalDasImagens{
-  font-size: 70px;
+  font-size: 4.375rem;
   text-align: center;
   margin: 0
 }
@@ -35,7 +35,7 @@ span{
 .painel{
   border: solid 10px brown;
   height: 20em;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .animate-fadein {
@@ -46,6 +46,16 @@ span{
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(20.5rem); }
+}
+
+.animate-fadeout {
+  animation: fadeOut 2s forwards;
+}
+
 
 .painelDeImagens{
   margin-top: 5em;
