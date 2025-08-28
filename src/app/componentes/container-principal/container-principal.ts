@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, input, OnInit } from '@angular/core';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { ToastModule } from 'primeng/toast';
 import { ButtonModule } from 'primeng/button';
 import { MessageService } from 'primeng/api';
+import { FormsModule, NgForm } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-container-principal',
-  imports: [FloatLabelModule, ToastModule, ButtonModule],
+  imports: [FloatLabelModule, ToastModule, ButtonModule, FormsModule, CommonModule],
   templateUrl: './container-principal.html',
   styleUrl: './container-principal.css',
   providers: [MessageService],
@@ -14,12 +16,10 @@ import { MessageService } from 'primeng/api';
 export class ContainerPrincipal {
   constructor(private messageService: MessageService) {}
 
-  show() {
-    this.messageService.add({
-      severity: 'info',
-      summary: 'Info',
-      detail: 'Message Content',
-      life: 3000,
-    });
+  showSuccess(formEmail: NgForm) {
+    this.messageService.add({ severity: 'success', summary: 'Sucesso', detail: 'Você receberá um email de confirmação, por favor verifique seu email' });
+    if (formEmail.valid){
+      formEmail.reset()
+    }
   }
 }
